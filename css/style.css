@@ -5,6 +5,10 @@
 
 .wrapper {
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
 .title {
@@ -14,13 +18,38 @@
 
 .title-1 {
     color: #38c038;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .text-1 {
     font-size: 20px;
     background-color: darkgrey;
-    margin-top: 10px;
 
+    /*margin-top: 50px;*/
+    /*margin-left: 20px;*/
+    /*margin-bottom: 70px;*/
+    /*margin-right: 35px;*/
+
+    margin: 50px 35px 70px 20px;
+
+    /*padding-top: 50px;*/
+    /*padding-left: 20px;*/
+    /*padding-bottom: 70px;*/
+    /*padding-right: 35px;*/
+
+    /*padding: 50px 35px 70px 20px;*/
+
+    /*border-width: 3px;*/
+    /*border-style: solid;*/
+    /*border-color: #000;*/
+
+    /*border: 3px solid black;*/
+
+}
+
+.title-2 {
+    margin-top: 100px;
 }
 
 .text-2 {
