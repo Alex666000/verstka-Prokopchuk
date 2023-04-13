@@ -3,104 +3,30 @@
 }
 
 .wrapper {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.image-1 {
-    /*
-    значение по умолчанию у элементов*/
-    /*мы можем анимировать любой элемент с цифровым значением то есть transform: translate(0px, -100px);
-     от 0 до -100рх есть перемещение.
-
-     Было 0 стало -100 !!! Значит можно анимировать
-     первый -- all (можно 2 свойства выбрать только к примеру) - свойства по которому анимировать
-     второй -- время анимации
-     третий -- поведение по времение во времени
-     четвертый -- задержка delay Timeout
-     */
-    transition: all .3s ease 0s;
-}
-
-.image-1:hover {
-    /*transform: translateY(-100px);*/
-    /*!*margin-top: -100px;*!*/
-    transform: translate(0px, -100px);
-}
-
-.title {
+.box {
+    width: 200px;
+    height: 200px;
+    border: 4px solid black;
+    font-size: 50px;
     text-align: center;
-    color: #4f1818;
-    margin: 25px 0 50px;
+    background-color: green;
 }
 
-.title-1 {
-    color: #38c038;
-    box-sizing: border-box;
-    overflow: hidden;
-    transition: all .5s;
-}
-
-.title-1:hover {
-    color: #ccc;
-    text-decoration: underline;
-}
-
-.title-1::before {
-    content: '';
-    width: 50px;
-    height: 50px;
-    background-color: #38c038;
-    position: absolute;
-}
-
-.text-1 {
-    font-size: 20px;
-    background-color: darkgrey;
-    width: 500px;
-    padding: 50px;
-    border: 20px solid black;
-    box-sizing: border-box;
-}
-
-.title-2 {
-    margin-top: 100px;
-}
-
-.text-2 {
-    font-size: 18px;
-    background-color: darkgrey;
-}
-
-.text-3 {
-    font-style: italic;
-}
-
-.text-4 {
-    text-align: right;
-    font-size: 14px;
-    color: red;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+                       ПРАВИЛА:
+- flex - родителю враперу - контейнеру пишем - И дочкам по умолчанию задается свойство flex-direction: row
+после того как родителю написали flex все box были блочные на всю ширину - теперь они флекс на шиирину контейнера себя..
+- строки и колонки...
+- habr - шпаргалка по флексбоксу см
+- 2 оси главная и поперечная - горизонтальная (justify-content) и вертикальная (align-items) - оси могут меняться др другом:
+- flex-direction: row-reverse -- поменяются местами
+- align-items: stretch; - элементы тянуться по всеи высоте
+- flex-wrap: wrap; перенос
+- order -- свойство работает с дочками -1 ставим и переместится в начало элемент с любого места
+ */
