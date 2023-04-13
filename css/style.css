@@ -1,14 +1,32 @@
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
 
+.image-1 {
+    /*
+    значение по умолчанию у элементов*/
+    /*мы можем анимировать любой элемент с цифровым значением то есть transform: translate(0px, -100px);
+     от 0 до -100рх есть перемещение.
 
+     Было 0 стало -100 !!! Значит можно анимировать
+     первый -- all (можно 2 свойства выбрать только к примеру) - свойства по которому анимировать
+     второй -- время анимации
+     третий -- поведение по времение во времени
+     четвертый -- задержка delay Timeout
+     */
+    transition: all .3s ease 0s;
+}
+
+.image-1:hover {
+    /*transform: translateY(-100px);*/
+    /*!*margin-top: -100px;*!*/
+    transform: translate(0px, -100px);
 }
 
 .title {
@@ -20,32 +38,21 @@
     color: #38c038;
     box-sizing: border-box;
     overflow: hidden;
+    transition: all .5s;
+}
+
+.title-1:hover {
+    color: #ccc;
+    text-decoration: underline;
 }
 
 .text-1 {
     font-size: 20px;
     background-color: darkgrey;
-
-    /*margin-top: 50px;*/
-    /*margin-left: 20px;*/
-    /*margin-bottom: 70px;*/
-    /*margin-right: 35px;*/
-
-    margin: 50px 35px 70px 20px;
-
-    /*padding-top: 50px;*/
-    /*padding-left: 20px;*/
-    /*padding-bottom: 70px;*/
-    /*padding-right: 35px;*/
-
-    /*padding: 50px 35px 70px 20px;*/
-
-    /*border-width: 3px;*/
-    /*border-style: solid;*/
-    /*border-color: #000;*/
-
-    /*border: 3px solid black;*/
-
+    width: 500px;
+    padding: 50px;
+    border: 20px solid black;
+    box-sizing: border-box;
 }
 
 .title-2 {
